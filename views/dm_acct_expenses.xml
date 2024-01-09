@@ -1,0 +1,22 @@
+<odoo>
+<record id="dm_expenses_action" model="ir.actions.act_window">
+    <field name="name">Expenses - DM</field>
+    <field name="res_model">dm.accounting.expense</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+<record id="dm_expenses_list" model="ir.ui.view">
+    <field name="name">Expenses List</field>
+    <field name="model">dm.accounting.expense</field>
+    <field name="arch" type="xml">
+        <tree string="Properties">
+            <field name="date"/>
+            <field name="amount"/>
+            <field name="account"/>
+            <field name="customer"/>
+            <field name="category"/>
+        </tree>
+    </field>
+</record>
+
+</odoo>

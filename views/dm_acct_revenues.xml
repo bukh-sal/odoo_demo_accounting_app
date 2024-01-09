@@ -1,0 +1,22 @@
+<odoo>
+<record id="dm_revenues_action" model="ir.actions.act_window">
+    <field name="name">Revenues - DM</field>
+    <field name="res_model">dm.accounting.revenue</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+<record id="dm_revenues_list" model="ir.ui.view">
+    <field name="name">Revenues List</field>
+    <field name="model">dm.accounting.revenue</field>
+    <field name="arch" type="xml">
+        <tree string="Properties">
+            <field name="date"/>
+            <field name="amount"/>
+            <field name="account"/>
+            <field name="income_type"/>
+            <field name="customer"/>
+        </tree>
+    </field>
+</record>
+
+</odoo>

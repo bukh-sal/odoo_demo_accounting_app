@@ -1,0 +1,20 @@
+<odoo>
+    <record id="dm_transfers_action" model="ir.actions.act_window">
+        <field name="name">Transfers - DM</field>
+        <field name="res_model">dm.accounting.transfer</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    
+    <record id="dm_transfers_list" model="ir.ui.view">
+        <field name="name">Transfers List</field>
+        <field name="model">dm.accounting.transfer</field>
+        <field name="arch" type="xml">
+            <tree string="Properties">
+                <field name="date"/>
+                <field name="amount"/>
+                <field name="from_account"/>
+                <field name="to_account"/>
+            </tree>
+        </field>
+    </record>
+</odoo>

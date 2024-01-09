@@ -1,0 +1,40 @@
+<odoo>
+    <record id="dm_accounts_action" model="ir.actions.act_window">
+        <field name="name">Accounts - DM</field>
+        <field name="res_model">dm.accounting.account</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    
+    <record id="dm_accounts_list" model="ir.ui.view">
+        <field name="name">Accounts List</field>
+        <field name="model">dm.accounting.account</field>
+        <field name="arch" type="xml">
+            <tree string="Properties">
+                <field name="name"/>
+                <field name="balance"/>
+            </tree>
+        </field>
+    </record>
+    
+    
+    <record id="dm_account_form_view" model="ir.ui.view">
+        <field name="name">Account Form</field>
+        <field name="model">dm.accounting.account</field>
+        <field name="arch" type="xml">
+            <form string="Properties">
+                
+                <sheet string="General Information">
+                    <group string="General Information">
+                        <field name="name"/>
+                        <field name="starting_balance"/>
+                    </group>
+                </sheet>
+                <sheet string="Balance">
+                    <group string="Balance">
+                        <field name="balance" readonly="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

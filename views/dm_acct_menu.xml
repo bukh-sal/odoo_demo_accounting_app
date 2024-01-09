@@ -1,0 +1,6 @@
+<odoo>
+    <menuitem id="accounts_menu_item" action="dm_accounts_action" name="Accounts - DM"/>
+    <menuitem id="revenues_menu_item" action="dm_revenues_action" name="Revenues - DM"/>
+    <menuitem id="expenses_menu_item" action="dm_expenses_action" name="Expenses - DM"/>
+    <menuitem id="transfers_menu_item" action="dm_transfers_action" name="Transfers - DM"/>
+</odoo>

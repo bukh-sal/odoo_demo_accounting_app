@@ -1,3 +1,7 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
 access_dm_accounts, access_dm_accounts, model_dm_accounting_account, base.group_user, 1, 1, 1, 1
 access_dm_revenues, access_dm_revenues, model_dm_accounting_revenue, base.group_user, 1, 1, 1, 1
+access_dm_expenses, access_dm_expenses, model_dm_accounting_expense, base.group_user, 1, 1, 1, 1
+access_dm_transfers, access_dm_transfers, model_dm_accounting_transfer, base.group_user, 1, 1, 1, 1
+access_dm_income_types, access_dm_income_types, model_dm_accounting_income_type, base.group_user, 1, 1, 1, 1
+access_dm_category, access_dm_category, model_dm_accounting_category, base.group_user, 1, 1, 1, 1

@@ -64,9 +64,6 @@ class Transfer(models.Model):
         if vals['amount'] <= 0:
             raise ValidationError("Transfer amount must be greater than zero.")
         
-        if vals['from_account'].balance < vals['amount']:
-            raise ValidationError("From account balance is less than the transfer amount.")
-        
         return True
     
     @api.model

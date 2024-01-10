@@ -19,4 +19,22 @@
     </field>
 </record>
 
+<record id="dm_revenues_form_view" model="ir.ui.view">
+    <field name="name">Revenue Form</field>
+    <field name="model">dm.accounting.revenue</field>
+    <field name="arch" type="xml">
+        <form string="Properties">
+            <sheet string="General Information">
+                <group string="General Information">
+                    <field name="date"/>
+                    <field name="amount"/>
+                    <field name="account"/>
+                    <field name="income_type"/>
+                    <field name="customer"/>
+                </group>
+            </sheet>
+        </form>
+    </field>
+</record>
+
 </odoo>

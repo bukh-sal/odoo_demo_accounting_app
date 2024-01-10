@@ -22,6 +22,12 @@ class Expense(models.Model):
         required=False,
         string="Customer"
     )
+    vendor = fields.Many2one(
+        "res.partner",
+        ondelete="cascade",
+        required=True,
+        string="Vendor"
+    )
     amount = fields.Float(
         required=True,
         default=0.00,

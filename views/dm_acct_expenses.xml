@@ -14,8 +14,28 @@
             <field name="amount"/>
             <field name="account"/>
             <field name="customer"/>
+            <field name="vendor"/>
             <field name="category"/>
         </tree>
+    </field>
+</record>
+
+<record id="dm_expenses_form_view" model="ir.ui.view">
+    <field name="name">Expense Form</field>
+    <field name="model">dm.accounting.expense</field>
+    <field name="arch" type="xml">
+        <form string="Properties">
+            <sheet string="General Information">
+                <group string="General Information">
+                    <field name="date"/>
+                    <field name="amount"/>
+                    <field name="account"/>
+                    <field name="customer"/>
+                    <field name="vendor"/>
+                    <field name="category"/>
+                </group>
+            </sheet>
+        </form>
     </field>
 </record>
 

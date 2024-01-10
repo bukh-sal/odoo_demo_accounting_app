@@ -1,6 +1,19 @@
 <odoo>
-    <menuitem id="accounts_menu_item" action="dm_accounts_action" name="Accounts - DM"/>
-    <menuitem id="revenues_menu_item" action="dm_revenues_action" name="Revenues - DM"/>
-    <menuitem id="expenses_menu_item" action="dm_expenses_action" name="Expenses - DM"/>
-    <menuitem id="transfers_menu_item" action="dm_transfers_action" name="Transfers - DM"/>
+    
+    <menuitem id="dm_acct_menu" name="DM Accounting">    
+        <menuitem id="dm_acct_dashboard" name="Dashboard" action="dm_acct_dashboard_action"/>
+        <menuitem id="dm_acct_accounts" name="Accounts" action="dm_accounts_action"/>
+
+        <menuitem id="dm_acct_revenues" name="Revenues">
+            <menuitem id="dm_acct_revenues_list" name="Revenues" action="dm_revenues_action"/>
+            <menuitem id="dm_acct_income_types" name="Income Types" action="dm_income_types_action"/>
+        </menuitem>
+
+        <menuitem id="dm_acct_expenses" name="Expenses">
+            <menuitem id="dm_acct_expenses_list" name="Expenses" action="dm_expenses_action"/>
+            <menuitem id="dm_acct_categories" name="Categories" action="dm_categories_action"/>
+        </menuitem>
+
+    </menuitem>
+
 </odoo>

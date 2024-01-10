@@ -1,7 +1,7 @@
 <odoo>
     <record id="dm_income_types_action" model="ir.actions.act_window">
         <field name="name">Income Types - DM</field>
-        <field name="res_model">dm.accounting.account</field>
+        <field name="res_model">dm.accounting.income.type</field>
         <field name="view_mode">tree,form</field>
     </record>
     

@@ -1,7 +1,7 @@
 <odoo>
     <record id="dm_categories_action" model="ir.actions.act_window">
         <field name="name">Categories - DM</field>
-        <field name="res_model">dm.accounting.account</field>
+        <field name="res_model">dm.accounting.category</field>
         <field name="view_mode">tree,form</field>
     </record>
     

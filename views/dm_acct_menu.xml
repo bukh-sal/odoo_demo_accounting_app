@@ -1,7 +1,6 @@
 <odoo>
     
     <menuitem id="dm_acct_menu" name="DM Accounting">    
-        <menuitem id="dm_acct_dashboard" name="Dashboard" action="dm_acct_dashboard_action"/>
         <menuitem id="dm_acct_accounts" name="Accounts" action="dm_accounts_action"/>
 
         <menuitem id="dm_acct_revenues" name="Revenues">

@@ -11,7 +11,7 @@
     """,
     # data files always loaded at installation
     'data': [
-        'views/dm_acct_dashboard.xml',
+        'views/templates.xml',
         'views/dm_acct_accounts.xml',
         'views/dm_acct_revenues.xml',
         'views/dm_acct_expenses.xml',

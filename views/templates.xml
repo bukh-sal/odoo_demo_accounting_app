@@ -1,0 +1,47 @@
+<odoo>
+
+    <!-- just a dummy dashboard (placeholder) -->
+    <template id="dashboard" name="DM Accounting Dashboard">
+        
+    <t t-call="portal.portal_layout">
+        <t t-set="title">DM Accounting Dashboard</t>
+        <t t-set="menu">dm_acct_menu</t>
+        <t t-set="breadcrumb">dm_acct_dashboard</t>
+        <t t-set="body_classname" t-value="'o_website_dashboard'"/>
+        <t t-set="dm_acct_dashboard" t-value="True"/>
+
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>DM Accounting Dashboard</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>DM Accounting is a simple accounting system for Odoo 10.0.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class="btn btn-primary" id="demo-button">Click Me!</button>
+                        <p id="click-count">0</p>
+
+                        <script>
+                            let button = document.getElementById('demo-button');
+                            button.addEventListener('click', function() {
+                                let count = document.getElementById('click-count');
+                                count.innerHTML = parseInt(count.innerHTML) + 1;
+                            });
+                        </script>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </t>
+    </template>
+
+</odoo>

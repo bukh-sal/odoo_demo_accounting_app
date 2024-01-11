@@ -1,6 +1,6 @@
 {
     'name': "Accounting Demo",
-    'version': '1.24',
+    'version': '1.27',
     'depends': [
         'base',
     ],
